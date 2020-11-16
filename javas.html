@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+<!--        var names = prompt('请输入你的名字')-->
+<!--        var age = prompt('请输入你的年龄')-->
+<!--        var sex = prompt('请输入你的性别')-->
+<!--        alert('你'+names+age+sex)-->
+
+<!--    var str = '';-->
+<!--    for (var i=1; i<=9; i++ ){-->
+<!--        for(var j=1; j<=i; j++){-->
+<!--            str=str+'♥';-->
+<!--        }-->
+<!--        str +='\n'-->
+<!--    }-->
+<!--    console.log(str);-->
+
+<!--    var sum=0-->
+<!--    for(var i=1; i<=100; i++){-->
+<!--        sum=sum+i-->
+<!--    }-->
+<!--    console.log(sum)-->
+
+<!--        var sum=0-->
+<!--        for(var i=1; i<=100; i++){-->
+<!--            if(i % 7 == 0){-->
+<!--                sum=sum+i;-->
+<!--            }-->
+<!--        }-->
+<!--        console.log(sum)-->
+
+<!--            var str=''-->
+<!--            for(var i = 1;i <=5 ;i++){-->
+<!--                for(var j = 1; j <= 5;j++){-->
+<!--                    str=str+'♥';-->
+<!--                }-->
+<!--                str=str+'\n'-->
+<!--            }-->
+<!--            console.log(str)-->
+
+
+
+
+
+
+<!--            var ck = 100-->
+
+<!--            while(num!==4){-->
+<!--            var num = prompt('请问你是要办理的业务.1存钱 2.取钱 3.余额 4.退出')-->
+<!--            if(num==1){-->
+<!--                var input = prompt('请问你要存多少钱');-->
+<!--                ck = ck+parseFloat(input);-->
+<!--                alert('你的余额为:' + ck);-->
+<!--                }-->
+<!--            else if (num==2) {-->
+<!--                    var output = prompt('请问你要取多少钱');-->
+<!--                    ck = ck-parseFloat(output);-->
+<!--                    alert('你的余额为:' + ck);-->
+<!--                }-->
+<!--            else if (num==3){-->
+<!--                    alert('你的余额为:' + ck);-->
+<!--            }-->
+<!--            else{-->
+<!--                break-->
+<!--            }-->
+<!--            }-->
+
+
+
+<!--function getRandom(min, max) {-->
+<!--  return Math.floor(Math.random() * (max - min + 1)) + min; //含最大值，含最小值-->
+<!--}-->
+
+<!--var random = getRandom(1,10)-->
+<!--    for(var i = 1; i<=3; i++){-->
+<!--        var num = prompt('请输入你想的数字:')-->
+
+<!--        if(num>random){-->
+<!--            alert('你猜大了');-->
+<!--        }-->
+<!--        else if(num<random){-->
+<!--            alert('你猜小了');-->
+<!--        }-->
+<!--        else if(num=random){-->
+<!--            alert('你猜对了');-->
+<!--            break;-->
+<!--        }-->
+
+<!--    }-->
+
+
+
+
+<!--var num = prompt('请输入你想的数字:');-->
+<!--var nums=[1,2];-->
+<!--nums.push(num);-->
+<!--console.log(nums);-->
+
+
+<!--    倒计时-->
+<!--  var date = new Date();-->
+<!--  console.log(date.getHours());-->
+<!--  console.log(date.getMinutes());-->
+<!--  console.log(date.getSeconds());-->
+
+<!--    function getTime(){-->
+<!--        var h = date.getHours();-->
+<!--        h = h>10 ? h : '0'+h;-->
+<!--        var m = date.getMinutes();-->
+<!--        m = m>10 ? m : '0'+m;-->
+<!--        var s = date.getSeconds();-->
+<!--        s = s>10 ? s : '0'+s;-->
+
+<!--        return h+':'+m+':'+s-->
+
+<!--    }-->
+<!--    console.log(getTime());-->
+
+
+
+
+<!--查找字符串中某个字符出现的次数和位置-->
+<!--var str='oijsiojodisjggds';-->
+<!--var index=str.indexOf('o');-->
+<!--var num=0;-->
+<!--       while(index!==-1){-->
+<!--            console.log(index);-->
+<!--            index=str.indexOf('o',index+1);-->
+<!--            num = num+1;-->
+<!--       }-->
+<!--       console.log(num);-->
+
+
+
+
+
+
+    </script>
+    <style>
+        #time{
+            background: pink;
+            height: 700px;
+            width: 800px;
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="mn1">美女1</button>
+    <button id="mn2">美女2</button>
+    <div id="time">
+        <img src="1.jpg">
+    </div>
+<script>
+    var m1 = document.querySelector('#mn1');
+    var m2 = document.querySelector('#mn2');
+    var img = document.querySelector('img');
+    m1.onclick = function(){
+        img.src='1.jpg';
+    }
+    m2.onclick = function(){
+        img.src='2.jpg';
+    }
+
+
+</script>
+</body>
+</html>
